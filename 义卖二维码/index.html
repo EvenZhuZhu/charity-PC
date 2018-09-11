@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>charity</title>
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/charity.css">
+  <link rel="stylesheet" href="./css/animate.css">
+</head>
+<body>
+
+<!--模态框-->
+<div class="block">
+  <div class="inner">
+    <div class="modal">
+      <div class="close"></div>
+      <div class="detail">
+        <div class="img"><img src="./images/pro1.png" alt=""></div>
+        <div class="first">
+          <span class="proname">吼吼吼吼吼吼吼吼吼吼</span>
+          <span class="lei">25类 服装鞋帽</span>
+        </div>
+        <p><span class='title'>适用范围</span><span class='content'>服装服装服装服装服装服装父皇服装服装服装服装服装服装父皇服装服装服装服装服装服装父皇服装服装服装服装服装服装父皇服装服装服装服装服装服装父皇服装服装服装服装服装服装父皇</span>
+        </p>
+        <p><span class='title'>类似群组</span><span class='content'>2501，2561，2555，1144，2501，2561，2555，1144，2501，2561，2555，1144，2501，2561，2555，1144，2501，2561，2555，1144，2501，2561，2555，1144</span>
+        </p>
+      </div>
+      <form action="" id="register">
+        <label for="prepay"><span>*</span>预付定金：</label>
+        <input type="text" name="" id="prepay" placeholder="此爱心商标最低建议价5000元"/>
+        <p class='fund notice'></p>
+        <label for="name"><span>*</span>姓名：</label>
+        <input type="text" name="" id="name" placeholder="请输入您的姓名"/>
+        <p class='name notice'></p>
+        <label for="phone"><span>*</span>手机号：</label>
+        <input type="text" name="" id="phone" placeholder="请输入您的手机号码"/>
+        <p class='phone notice'></p>
+        <label for="address">地址：</label>
+        <input type="text" name="" id="address" placeholder="请输入您的详细地址"/>
+      </form>
+      <div class="pay"><a href="#"><input type="submit" value="立即支付"></a></div>
+    </div>
+    <div class="erweima">
+      <div class="close"></div>
+      <div class="ewmpay">
+        <div class="text">
+          <span class="wx active">微信支付</span>
+          <span class="zfb">支付宝支付</span>
+        </div>
+        <div class='pic'>
+          <div class="pic1"></div>
+          <div class="pic2"></div>
+        </div>
+        <div class="open">打开<span>微信</span>&nbsp;&nbsp;&nbsp;扫描二维码</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="./lib/jquery.min.js"></script>
+<script>
+  
+  //弹出模态框
+  $('.block').css('display', 'block');
+  $('#register input').html('');
+  
+  //关闭模态框
+  $('.modal').on('click', '.close', function () {
+    $('.block').css('display', 'none');
+  })
+  
+  //金额正则
+  var fundreg = /(^[1-9]([0-9]+)?(\.[0-9]{1,2})?$)|(^(0){1}$)|(^[0-9]\.[0-9]([0-9])?$)/;
+  $('#register #prepay').blur(function () {
+    $(this).css('border', '1px solid rgba(255,255,255,0)');
+    var fundval = $(this).val().trim();
+    if (!fundreg.test(fundval)) {
+      $('#register .fund').html('*请输入正确金额，不能为负数，可保留两位小数');
+      $(this).val('')
+    }
+  })
+  $('#register #prepay').focus(function () {
+    $(this).css('border', '1px solid #fef380');
+    $('#register .fund').html('');
+  })
+  
+  //中文姓名正则
+  var namereg = /^[\u4e00-\u9fa5]+(·[\u4e00-\u9fa5]+)*$/;
+  $('#register #name').blur(function () {
+    $(this).css('border', '1px solid rgba(255,255,255,0)');
+    var nameval = $(this).val().trim();
+    ;
+    if (!namereg.test(nameval)) {
+      $('#register .name').html('*请输入中文姓名');
+      $(this).val('')
+    }
+  })
+  $('#register #name').focus(function () {
+    $(this).css('border', '1px solid #fef380');
+    $('#register .name').html('');
+  })
+  
+  //手机号正则
+  var phonereg = /^134[0-8]\d{7}$|^13[^4]\d{8}$|^14[5-9]\d{8}$|^15[^4]\d{8}$|^16[6]\d{8}$|^17[0-8]\d{8}$|^18[\d]{9}$|^19[8,9]\d{8}$/;
+  $('#register #phone').blur(function () {
+    $(this).css('border', "1px solid rgba(255,255,255,0)");
+    var phoneval = $(this).val().trim();
+    if (!phonereg.test(phoneval)) {
+      $('#register .phone').html('*请输入正确手机号');
+      $(this).val('')
+    }
+  })
+  $('#register #phone').focus(function () {
+    $(this).css('border', '1px solid #fef380');
+    $('#register .phone').html('');
+  })
+  
+  
+  $('.swtCenter .swtClose a').eq(0).on('click', function () {
+    $('#swtCenter').css('display', 'none')
+  })
+  
+  $('.ewmpay .text span').on('click', function () {
+    $(this).addClass('active').siblings('span').removeClass('active');
+    var idx = $(this).index();
+    console.log(idx);
+    $(this).parent().siblings().children().eq(idx).css('display', 'block').siblings().css('display', 'none');
+    if ($(this).text() == "微信支付") {
+      $('.open span').html("微信");
+    } else {
+      $('.open span').html("支付宝");
+    }
+  })
+  
+  
+  $('.erweima').on('click', '.close', function () {
+    $('.block').css('display', 'none');
+  })
+  
+  
+  $('.wx').addClass('active').siblings('span').removeClass('active');
+  $('.wx').parent().siblings().children().eq(0).css('display', 'block').siblings('span').css('display', 'none');
+  $('.open span').html("微信");
+</script>
+
+
+</body>
+</html>

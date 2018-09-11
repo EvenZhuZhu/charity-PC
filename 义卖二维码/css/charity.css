@@ -1,0 +1,738 @@
+@media screen and (max-height: 925px) {
+  .buy_charity_box .modal {
+    margin: 0 auto;
+    margin-top: 15px;
+    width: 488px;
+    height: 503px;
+    background: url(../images/modal/bg.png) no-repeat center center;
+    background-size: 488px 503px;
+    border-radius: 9px;
+    position: relative;
+    border-top: 1px solid #ea6f4d;
+    opacity: 1
+  }
+
+  .buy_charity_box .modal .close {
+    width: 10px;
+    height: 10px;
+    background-size: 10px 10px;
+    top: -5px;
+    right: -15px;
+    background: url(../images/modal/close.png) no-repeat center center;
+    background-size: 10px 10px;
+    position: absolute
+  }
+
+  .buy_charity_box .modal .detail {
+    width: 461px;
+    height: 105px;
+    background-color: #e14033;
+    border-radius: 5px;
+    margin: 108px auto;
+    padding: 11px;
+    box-sizing: border-box
+  }
+
+  .buy_charity_box .modal .detail .img {
+    width: 114px;
+    height: 84px;
+    float: left;
+    margin-right: 11px
+  }
+
+  .buy_charity_box .modal .detail .img img {
+    width: 100%;
+    height: auto
+  }
+
+  .buy_charity_box .modal .detail .first .proname {
+    font-size: 18px;
+    color: #fff
+  }
+
+  .buy_charity_box .modal .detail .first .lei {
+    font-size: 14px;
+    color: #fef380;
+    background-color: #e96d5e;
+    border-radius: 3px;
+    padding: 2px 6px;
+    margin-left: 11px
+  }
+
+  .buy_charity_box .modal .detail p {
+    margin-top: 9px
+  }
+
+  .buy_charity_box .modal .detail p span {
+    color: #fff
+  }
+
+  .buy_charity_box .modal .detail p span.title {
+    color: #fef380;
+    border-radius: 2px;
+    border: 1px solid #fef380;
+    margin-right: 8px;
+    padding: 0 3px;
+    display: inline-block
+  }
+
+  .buy_charity_box .modal .detail p span.content {
+    display: inline-block;
+    width: 240px;
+    height: 24px;
+    vertical-align: top;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden
+  }
+
+  #register {
+    font-size: 17px;
+    color: #fff;
+    margin-top: -90px
+  }
+
+  #register label {
+    display: inline-block;
+    width: 143px;
+    height: 38px;
+    text-align: right;
+    line-height: 38px
+  }
+
+  #register label span {
+    color: #fef380
+  }
+
+  #register input {
+    font-size: 12px;
+    width: 250px;
+    height: 38px;
+    border-radius: 3px;
+    padding-left: 12px;
+    color: #fff;
+    background-color: rgba(255, 255, 255, .2);
+    border: 1px solid rgba(255, 255, 255, 0)
+  }
+
+  input::-webkit-input-placeholder {
+    color: #fff
+  }
+
+  #register .notice {
+    font-size: 9px;
+    height: 18px;
+    padding-left: 150px;
+    color: #fef380
+  }
+
+  .buy_charity_box .modal .pay {
+    width: 240px;
+    height: 51px;
+    background-color: #fff;
+    border-radius: 26px;
+    text-align: center;
+    line-height: 21px;
+    position: absolute;
+    bottom: -26px;
+    left: 128px
+  }
+
+  .buy_charity_box .modal .pay #charityId {
+    display: inline-block;
+    width: 240px;
+    text-decoration: none;
+    background: url(../images/modal/go.png) no-repeat 345px center;
+    height: 51px;
+    border: none;
+    background-color: #fff;
+    color: #dd4b41;
+    border-radius: 26px;
+    /*font-weight: 520;*/
+    font-size: 30px;
+    cursor: pointer
+  }
+
+  .one1, .one2, .one3, .one4, .one5, .one6, .one7 {
+    z-index: 1
+  }
+
+  .buy_charity_box .erweima {
+    margin: 0 auto;
+    margin-top: 8px;
+    width: 488px;
+    height: 518px;
+    background: url(../images/pay/zfbg.png) no-repeat center center;
+    background-size: 488px 518px;
+    border-radius: 9px;
+    position: relative;
+    border-top: 1px solid #ea6f4d;
+    opacity: 1;
+    display: none
+  }
+
+  .buy_charity_box .erweima .close {
+    background: url(../images/modal/close.png) no-repeat center center;
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    background-size: 11px 11px;
+    top: -5px;
+    right: -14px
+  }
+
+  .buy_charity_box .erweima .ewmpay .text {
+    width: 507px;
+    height: 30px;
+    font-size: 24px;
+    color: #fff;
+    margin-top: 71px
+  }
+
+  .buy_charity_box .erweima .ewmpay .text span {
+    display: inline-block;
+    width: 252px;
+    float: left;
+    text-align: center;
+    cursor: pointer
+  }
+
+  .buy_charity_box .erweima .ewmpay .text span.active {
+    color: #fef380
+  }
+
+  .buy_charity_box .erweima .ewmpay .pic1 {
+    width: 190px;
+    height: 190px;
+    margin: 0 auto;
+    border: 1px solid #fff;
+    margin-top: 20px;
+    padding: 11px;
+    background: url(../images/pay/wx.png) no-repeat center center
+  }
+
+  .buy_charity_box .erweima .ewmpay .pic2 {
+    display: none;
+    width: 190px;
+    height: 190px;
+    margin: 0 auto;
+    border: 1px solid #fff;
+    margin-top: 20px;
+    padding: 11px;
+    background: url(../images/pay/zfb.png) no-repeat center center
+  }
+
+  .buy_charity_box .erweima .ewmpay .open {
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    margin-top: 11px
+  }
+
+  .buy_charity_box .erweima .ewmpay .open span {
+    color: #fef380
+  }
+}
+@media screen and (max-height: 700px) {
+  .buy_charity_box .modal {
+    margin: 0 auto;
+    margin-top: 15px;
+    width: 325px;
+    height: 335px;
+    background: url(../images/modal/bg.png) no-repeat center center;
+    background-size: 325px 335px;
+    border-radius: 6px;
+    position: relative;
+    border-top: 1px solid #ea6f4d;
+    opacity: 1
+  }
+
+  .buy_charity_box .modal .close {
+    width: 7px;
+    height: 7px;
+    background-size: 7px 7px;
+    top: -3px;
+    right: -9px;
+    background: url(../images/modal/close.png) no-repeat center center;
+    background-size: 7px 7px;
+    position: absolute
+  }
+
+  .buy_charity_box .modal .detail {
+    width: 307px;
+    height: 70px;
+    background-color: #e14033;
+    border-radius: 3px;
+    margin: 72px auto;
+    padding: 7px;
+    box-sizing: border-box
+  }
+
+  .buy_charity_box .modal .detail .img {
+    width: 76px;
+    height: 56px;
+    float: left;
+    margin-right: 7px
+  }
+
+  .buy_charity_box .modal .detail .img img {
+    width: 100%;
+    height: auto
+  }
+
+  .buy_charity_box .modal .detail .first .proname {
+    font-size: 12px;
+    color: #fff
+  }
+
+  .buy_charity_box .modal .detail .first .lei {
+    font-size: 9px;
+    color: #fef380;
+    background-color: #e96d5e;
+    border-radius: 2px;
+    padding: 1px 4px;
+    margin-left: 7px
+  }
+
+  .buy_charity_box .modal .detail p {
+    margin-top: 6px
+  }
+
+  .buy_charity_box .modal .detail p span {
+    color: #fff
+  }
+
+  .buy_charity_box .modal .detail p span.title {
+    color: #fef380;
+    border-radius: 1px;
+    border: 1px solid #fef380;
+    margin-right: 5px;
+    padding: 0 2px;
+    display: inline-block
+  }
+
+  .buy_charity_box .modal .detail p span.content {
+    display: inline-block;
+    width: 160px;
+    height: 16px;
+    vertical-align: top;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden
+  }
+
+  #register {
+    font-size: 12px;
+    color: #fff;
+    margin-top: -60px
+  }
+
+  #register label {
+    display: inline-block;
+    width: 95px;
+    height: 25px;
+    text-align: right;
+    line-height: 25px
+  }
+
+  #register label span {
+    color: #fef380
+  }
+
+  #register input {
+    font-size: 8px;
+    width: 167px;
+    height: 25px;
+    border-radius: 2px;
+    padding-left: 8px;
+    color: #fff;
+    background-color: rgba(255, 255, 255, .2);
+    border: 1px solid rgba(255, 255, 255, 0)
+  }
+
+  input::-webkit-input-placeholder {
+    color: #fff
+  }
+
+  #register .notice {
+    font-size: 6px;
+    height: 12px;
+    padding-left: 100px;
+    color: #fef380
+  }
+
+  .buy_charity_box .modal .pay {
+    width: 160px;
+    height: 34px;
+    background-color: #fff;
+    border-radius: 17px;
+    text-align: center;
+    line-height: 24px;
+    position: absolute;
+    bottom: -17px;
+    left: 85px
+  }
+
+  .buy_charity_box .modal .pay #charityId {
+    display: inline-block;
+    width: 160px;
+    text-decoration: none;
+    background: url(../images/modal/go.png) no-repeat 230px center;
+    height: 34px;
+    border: none;
+    background-color: #fff;
+    color: #dd4b41;
+    border-radius: 17px;
+    font-weight: 350;
+    font-size: 15px;
+    cursor: pointer
+  }
+
+  .one1, .one2, .one3, .one4, .one5, .one6, .one7 {
+    z-index: 1
+  }
+
+  .buy_charity_box .erweima {
+    margin: 0 auto;
+    margin-top: 5px;
+    width: 325px;
+    height: 345px;
+    background: url(../images/pay/zfbg.png) no-repeat center center;
+    background-size: 345px 345px;
+    border-radius: 6px;
+    position: relative;
+    border-top: 1px solid #ea6f4d;
+    opacity: 1;
+    display: none
+  }
+
+  .buy_charity_box .erweima .close {
+    background: url(../images/modal/close.png) no-repeat center center;
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    background-size: 7px 7px;
+    top: -3px;
+    right: -9px
+  }
+
+  .buy_charity_box .erweima .ewmpay .text {
+    width: 338px;
+    height: 20px;
+    font-size: 16px;
+    color: #fff;
+    margin-top: 47px
+  }
+
+  .buy_charity_box .erweima .ewmpay .text span {
+    display: inline-block;
+    width: 168px;
+    float: left;
+    text-align: center;
+    cursor: pointer
+  }
+
+  .buy_charity_box .erweima .ewmpay .text span.active {
+    color: #fef380
+  }
+
+  .buy_charity_box .erweima .ewmpay .pic1 {
+    width: 127px;
+    height: 127px;
+    margin: 0 auto;
+    border: 1px solid #fff;
+    margin-top: 13px;
+    padding: 7px;
+    background: url(../images/pay/wx.png) no-repeat center center
+  }
+
+  .buy_charity_box .erweima .ewmpay .pic2 {
+    display: none;
+    width: 127px;
+    height: 127px;
+    margin: 0 auto;
+    border: 1px solid #fff;
+    margin-top: 13px;
+    padding: 7px;
+    background: url(../images/pay/zfb.png) no-repeat center center
+  }
+
+  .buy_charity_box .erweima .ewmpay .open {
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    margin-top: 11px
+  }
+
+  .buy_charity_box .erweima .ewmpay .open span {
+    color: #fef380
+  }
+}
+/*----------------------模态框-------------------*/
+.block {
+  position: fixed;
+  width: 100%;
+  height: 200%;
+  z-index: 2;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  background-color: #000;
+  filter: Alpha(opacity=50);
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  -moz-opacity: 0.8;
+  filter: alpha(opacity=70);
+}
+
+.block .inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 100px auto;
+  max-height: 40%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border-radius: 12px;
+  z-index: 2;
+}
+
+.block .modal {
+  display: block;
+  margin: 0 auto;
+  width: 676px;
+  height: 706px;
+  background: url("../images/modal/bg.png") no-repeat center center;
+  background-size: 676px 706px;
+  border-radius: 12px;
+  position: relative;
+  border-top: 1px solid #ea6f4d;
+  opacity: 1;
+}
+
+.block .modal .close {
+  width: 15px;
+  height: 13px;
+  background: url("../images/modal/close.png") no-repeat center center;
+  background-size: 15px 13px;
+  position: absolute;
+  top: 16px;
+  right: 20px;
+}
+
+.block .modal .detail {
+  width: 614px;
+  height: 140px;
+  background-color: #e14033;
+  border-radius: 6px;
+  margin: 144px auto;
+  padding: 14px;
+  box-sizing: border-box;
+}
+
+.block .modal .detail .img {
+  width: 152px;
+  height: 112px;
+  float: left;
+  margin-right: 14px;
+}
+
+.block .modal .detail .img img {
+  width: 100%;
+  height: auto;
+}
+
+.block .modal .detail .first .proname {
+  font-size: 24px;
+  color: #fff;
+}
+
+.block .modal .detail .first .lei {
+  font-size: 18px;
+  color: #fef380;
+  background-color: #e96d5e;
+  border-radius: 4px;
+  padding: 2px 8px;
+  margin-left: 14px;
+}
+
+.block .modal .detail p {
+  margin-top: 12px;
+}
+
+.block .modal .detail p span {
+  color: #fff;
+}
+
+.block .modal .detail p span.title {
+  color: #fef380;
+  border-radius: 2px;
+  border: 1px solid #fef380;
+  margin-right: 10px;
+  padding: 0 4px;
+  display: inline-block;
+}
+
+.block .modal .detail p span.content {
+  display: inline-block;
+  width: 320px;
+  height: 32px;
+  vertical-align: top;
+}
+
+#register {
+  font-size: 24px;
+  color: #fff;
+  margin-top: -120px;
+}
+
+#register label {
+  display: inline-block;
+  width: 190px;
+  height: 50px;
+  text-align: right;
+  line-height: 50px;
+}
+
+#register label span {
+  color: #fef380;
+}
+
+#register input {
+  font-size: 16px;
+  width: 334px;
+  height: 50px;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0);
+  padding-left: 16px;
+  color: #fff;
+}
+
+input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+#register .notice {
+  font-size: 12px;
+  height: 24px;
+  padding-left: 200px;
+  color: #fef380;
+}
+
+.block .modal .pay {
+  width: 320px;
+  height: 68px;
+  background-color: #fff;
+  border-radius: 34px;
+  text-align: center;
+  line-height: 68px;
+  position: absolute;
+  bottom: -34px;
+  left: 180px;
+}
+
+.block .modal .pay a {
+  display: inline-block;
+  width: 320px;
+  text-decoration: none;
+  background: url("../images/modal/go.png") no-repeat 230px center;
+}
+
+.block .modal .pay a input {
+  height: 68px;
+  border: none;
+  background-color: #fff;
+  color: #dd4b41;
+  font-weight: bold;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/*-----------------------支付---------------------*/
+.block .erweima {
+  display: none;
+  margin: 0 auto;
+  width: 676px;
+  height: 806px;
+  background: url("../images/pay/zfbg.png") no-repeat center center;
+  background-size: 676px 806px;
+  border-radius: 12px;
+  position: relative;
+  border-top: 1px solid #ea6f4d;
+  opacity: 1;
+}
+
+.block .erweima .close {
+  width: 15px;
+  height: 13px;
+  background: url("../images/pay/close.png") no-repeat center center;
+  background-size: 15px 13px;
+  position: absolute;
+  top: 16px;
+  right: 20px;
+}
+
+.block .erweima .ewmpay .text {
+  width: 676px;
+  height: 40px;
+  font-size: 32px;
+  color: #fff;
+  margin-top: 112px;
+}
+
+.block .erweima .ewmpay .text span {
+  display: inline-block;
+  width: 336px;
+  float: left;
+  text-align: center;
+  cursor: pointer;
+}
+
+.block .erweima .ewmpay .text span.active {
+  color: #fef380;
+}
+
+.block .erweima .ewmpay .pic1 {
+  width: 254px;
+  height: 254px;
+  margin: 0 auto;
+  border: 1px solid #fff;
+  margin-top: 60px;
+  padding: 14px;
+  background: url("../images/pay/zfb.png") no-repeat center center;
+}
+
+.block .erweima .ewmpay .pic2 {
+  display: none;
+  width: 254px;
+  height: 254px;
+  margin: 0 auto;
+  border: 1px solid #fff;
+  margin-top: 60px;
+  padding: 14px;
+  background: url("../images/pay/wx.png") no-repeat center center;
+}
+
+.block .erweima .ewmpay .open {
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  margin-top: 22px;
+}
+
+.block .erweima .ewmpay .open span {
+  color: #fef380;
+}
+
+
+
+
+
